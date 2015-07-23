@@ -1,0 +1,12 @@
+.cf::after {
+  clear: both;
+  content: "";
+  display: table; }
+
+/* -- Global
+-------------------------------------------------- */
+html, body {
+  font-size: 15px; }
+
+h1 {
+  font-size: 2rem; }

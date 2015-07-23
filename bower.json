@@ -1,0 +1,25 @@
+{
+	"name": "protohype",
+	"version": "1.0.0",
+	"main": "css/style.css",
+	"authors": [
+		"Azeem Hadi <ahadi@solarmedia.co.uk>"
+	],
+	"moduleType": [
+		"node"
+	],
+	"license": "MIT",
+	"private": true,
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"lib/components/",
+		"test",
+		"tests"
+	],
+	"dependencies": {
+		"jquery": "1.11.2",
+		"bootstrap": "~3.3.4"
+	}
+}
