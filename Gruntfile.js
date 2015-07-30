@@ -1,20 +1,19 @@
 module.exports = function(grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
-		sass: {
-			dist: {
-				files: {
-					'src/css/style.css' : 'src/css/style.scss'
-				}
-			}
-		},
-		autoprefixer: {
+		postcss: {
 			options: {
-				browsers: ['last 2 versions', 'ie 8', 'ie 9']
+				processors: [
+					require('postcss-nested')(),
+					require('cssnext')({
+						'browsers': ['last 2 version'],
+						'compress' : true
+					})
+				]
 			},
 			dist: {
 				files: {
-					'dest/css/style.css' : 'src/css/style.css'
+					'dest/css/style.min.css' : 'src/css/style.css'
 				}
 			}
 		},
@@ -55,11 +54,8 @@ module.exports = function(grunt) {
 		},
 		watch: {
 			css: {
-				files: 'src/css/**.scss',
-				tasks: [
-					'sass',
-					'autoprefixer'
-				]
+				files: 'src/css/**.css',
+				tasks: ['postcss']
 			},
 			html: {
 				files: 'src/**.html',
@@ -75,9 +71,8 @@ module.exports = function(grunt) {
 			}
 		}
 	});
-	grunt.loadNpmTasks('grunt-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-autoprefixer');
+	grunt.loadNpmTasks('grunt-postcss');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-includes');

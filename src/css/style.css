@@ -1,12 +1,22 @@
-.cf::after {
-  clear: both;
-  content: "";
-  display: table; }
+.cf {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+:root {
+	--color__primary: #3498db;
+	--color__primary--dark: #2980b9;
 
-/* -- Global
+	--font-stack: Helvetica, Arial, sans-serif;
+}
+/*-- Global
 -------------------------------------------------- */
 html, body {
-  font-size: 15px; }
-
+	font-size: 15px;
+	font-family: var(--font-stack);
+}
 h1 {
-  font-size: 2rem; }
+	font-size: 2rem;
+}
