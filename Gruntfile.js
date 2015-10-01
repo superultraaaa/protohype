@@ -4,16 +4,14 @@ module.exports = function(grunt) {
 		postcss: {
 			options: {
 				processors: [
-					require('postcss-nested')(),
-					require('cssnext')({
-						'browsers': ['last 2 version'],
-						'compress' : true
-					})
+					require('precss')(),
+					require('autoprefixer')(),
+					require('cssnano')
 				]
 			},
 			dist: {
 				files: {
-					'dest/css/style.min.css' : 'src/css/style.css'
+					'dist/css/style.min.css' : 'src/css/style.css'
 				}
 			}
 		},
@@ -22,7 +20,7 @@ module.exports = function(grunt) {
 				src: [
 					'src/index.html'
 				],
-				dest: 'dest',
+				dest: 'dist',
 				flatten: true,
 				cwd: '.',
 				options: {
@@ -46,7 +44,7 @@ module.exports = function(grunt) {
 		uglify: {
 			main: {
 				files: {
-					'dest/js/main.min.js': [
+					'dist/js/main.min.js': [
 						'src/js/main.js'
 					]
 				}
@@ -55,10 +53,12 @@ module.exports = function(grunt) {
 		watch: {
 			css: {
 				files: 'src/css/**.css',
-				tasks: ['postcss']
+				tasks: [
+					'postcss'
+				]
 			},
 			html: {
-				files: 'src/**.html',
+				files: 'src/**/*.html',
 				tasks: [
 					'includes'
 				]

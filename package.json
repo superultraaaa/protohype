@@ -1,16 +1,22 @@
 {
   "name": "protohype",
-  "version": "1.1.0",
-  "description": "A clean framework using PostCSS, cssnext, Grunt, Bootstrap for prototypes.",
+  "version": "1.1.1",
+  "description": "A clean framework using PostCSS, Grunt, Bootstrap for prototypes.",
   "author": "Azeem Hadi <ahadi@superultra.co.uk>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/superultraaaa/protohype.git"
+  },
+  "license": "MIT",
   "devDependencies": {
-    "cssnext": "^1.8.2",
+    "autoprefixer": "^5.2.0",
+    "cssnano": "^2.1.1",
     "grunt": "^0.4.5",
     "grunt-contrib-copy": "^0.8.0",
     "grunt-contrib-uglify": "^0.9.1",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-includes": "^0.5.1",
     "grunt-postcss": "^0.5.5",
-    "postcss-nested": "^0.3.2"
+    "precss": "^0.3.0"
   }
 }
