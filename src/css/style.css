@@ -5,12 +5,12 @@
 		clear: both;
 	}
 }
-:root {
-	$color__primary: #3498db;
-	$color__primary--dark: #2980b9;
 
-	$font__stack: Helvetica, Arial, sans-serif;
-}
+$color__primary: #3498db;
+$color__primary--dark: #2980b9;
+
+$font__stack: Helvetica, Arial, sans-serif;
+
 /*-- Global
 -------------------------------------------------- */
 html, body {
