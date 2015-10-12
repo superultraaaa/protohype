@@ -6,17 +6,41 @@
 	}
 }
 
-$color__primary: #3498db;
-$color__primary--dark: #2980b9;
+$color__primary: #2CA446;
+$color__primary--dark: #009345;
+$color__primary--light: #37B34A;
 
-$font__stack: Helvetica, Arial, sans-serif;
+$color__shade: #323840;
+$color__shade--light: #404852;
+$color__shade--dark: #1c2025;
+$color__shade--faded: #f4f6f9;
+$color__shade--border: #dbdfe4;
+
+$color__context--red: #e74c3c;
+
+$font__stack: Arial, sans-serif;
 
 /*-- Global
 -------------------------------------------------- */
 html, body {
 	font-size: 15px;
-	font-family: $font-stack;
+	font-family: $font__stack;
 }
 h1 {
 	font-size: 2rem;
+}
+/*-- Primary header
+-------------------------------------------------- */
+.primary-header {
+
+}
+/*-- Main
+-------------------------------------------------- */
+.main {
+
+}
+/*-- Primary footer
+-------------------------------------------------- */
+.primary-footer {
+
 }

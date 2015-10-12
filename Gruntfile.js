@@ -37,7 +37,7 @@ module.exports = function(grunt) {
 					'lib/components/bootstrap/dist/js/bootstrap.min.js',
 					'lib/components/bootstrap/dist/css/bootstrap.min.css'
 				],
-				dest: 'dest/',
+				dest: 'dist/',
 				flatten: false
 			}
 		},
