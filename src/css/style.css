@@ -6,17 +6,100 @@
 	}
 }
 
-$color__primary: #3498db;
-$color__primary--dark: #2980b9;
+$color__primary: #2CA446;
+$color__primary--dark: #009345;
+$color__primary--light: #37B34A;
 
-$font__stack: Helvetica, Arial, sans-serif;
+$color__shade: #323840;
+$color__shade--light: #404852;
+$color__shade--dark: #1c2025;
+$color__shade--faded: #f4f6f9;
+$color__shade--border: #dbdfe4;
+
+$color__context--red: #e74c3c;
+
+$font__stack: "proxima-nova", "Avenir Next", Arial, sans-serif;
 
 /*-- Global
 -------------------------------------------------- */
 html, body {
 	font-size: 15px;
-	font-family: $font-stack;
+	font-family: $font__stack;
 }
 h1 {
 	font-size: 2rem;
+}
+.wide-container {
+	max-width: 96rem;
+	background-color: $color__shade--faded;
+}
+.btn {
+	border-radius: 3px;
+	transition: all .2s;
+}
+.btn-primary {
+	background-color: transparent;
+	border-color: $color__primary--light;
+	color: $color__primary--dark;
+	&:hover {
+		background-color: $color__primary;
+		color: white;
+		border-color: $color__primary;
+	}
+	&:focus,
+	&:active {
+		outline: none;
+		box-shadow: none;
+		background-color: $color__primary--dark;
+		border-color: $color__primary--dark;
+	}
+}
+.btn-lg {
+	border-width: 2px;
+	font-weight: 700;
+}
+/*-- Primary header
+-------------------------------------------------- */
+.primary-header {
+	padding-top: 2.5rem;
+	padding-bottom: 2.5rem;
+}
+.primary-header__info {
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+/*-- Main
+-------------------------------------------------- */
+.c-body {
+	ul {
+		margin-bottom: 1rem;
+	}
+	p {
+		line-height: 1.6em;
+		font-size: 1.1rem;
+		margin-bottom: 1rem;
+	}
+	li {
+		line-height: 1.4em;
+		font-size: 1.1rem;
+	}
+}
+/*-- Primary footer
+-------------------------------------------------- */
+.primary-footer {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	margin-top: 2.5rem;
+	background-color: $color__shade--faded;
+	border-top: 1px solid $color__shade--border;
+	h4 {
+		font-size: 1.1rem;
+		font-weight: 700;
+	}
+	p {
+		font-size: .9rem;
+		color: $color__shade--light;
+	}
 }
