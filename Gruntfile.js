@@ -33,9 +33,6 @@ module.exports = function(grunt) {
 				expand: true,
 				cwd: 'src/',
 				src: [
-					'lib/components/jquery/dist/jquery.min.js',
-					'lib/components/bootstrap/dist/js/bootstrap.min.js',
-					'lib/components/bootstrap/dist/css/bootstrap.min.css'
 				],
 				dest: 'dist/',
 				flatten: false

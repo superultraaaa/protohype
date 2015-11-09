@@ -67,6 +67,7 @@ node_modules
 
 ##bower components
 src/lib/components
+dist/lib/components
 
 #http-server
 http-server

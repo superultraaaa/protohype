@@ -1,7 +1,7 @@
 {
   "name": "protohype",
-  "version": "1.1.1",
-  "description": "A clean framework using PostCSS, Grunt, Bootstrap for prototypes.",
+  "version": "1.2.0",
+  "description": "A clean framework using PostCSS, Grunt and Bootstrap grids for prototypes.",
   "author": "Azeem Hadi <ahadi@superultra.co.uk>",
   "repository": {
     "type": "git",

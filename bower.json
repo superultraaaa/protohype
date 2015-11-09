@@ -1,8 +1,8 @@
 {
 	"name": "protohype",
-	"version": "1.1.0",
+	"version": "1.2.0",
 	"authors": [
-		"Azeem Hadi <ahadi@solarmedia.co.uk>"
+		"Azeem Hadi <ahadi@superultra.co.uk>"
 	],
 	"moduleType": [
 		"node"
@@ -18,7 +18,5 @@
 		"tests"
 	],
 	"dependencies": {
-		"jquery": "1.11.2",
-		"bootstrap": "~3.3.4"
 	}
 }
