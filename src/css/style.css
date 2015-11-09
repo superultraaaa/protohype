@@ -1,10 +1,4 @@
-.cf {
-	&:after {
-		content: "";
-		display: table;
-		clear: both;
-	}
-}
+@import "_base.css";
 
 $color__primary: #2CA446;
 $color__primary--dark: #009345;
