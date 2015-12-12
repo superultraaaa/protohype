@@ -28,21 +28,11 @@ module.exports = function(grunt) {
 				}
 			}
 		},
-		copy: {
-			main: {
-				expand: true,
-				cwd: 'src/',
-				src: [
-				],
-				dest: 'dist/',
-				flatten: false
-			}
-		},
 		uglify: {
 			main: {
 				files: {
 					'dist/js/main.min.js': [
-						'src/js/main.js'
+						'src/js/**.js'
 					]
 				}
 			}
@@ -61,7 +51,7 @@ module.exports = function(grunt) {
 				]
 			},
 			scripts: {
-				files: 'src/js/main.js',
+				files: 'src/js/**.js',
 				tasks: [
 					'uglify'
 				]
@@ -71,7 +61,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-postcss');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
-	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-includes');
 	grunt.registerTask('default',['watch']);
 }
