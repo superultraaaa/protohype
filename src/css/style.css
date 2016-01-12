@@ -12,6 +12,8 @@ $color__shade--border: #dbdfe4;
 
 $color__context--red: #e74c3c;
 
+$font__stack: Arial, Helvetica, sans-serif;
+
 /*-- Global
 -------------------------------------------------- */
 html, body {
